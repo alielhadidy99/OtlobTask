@@ -1,0 +1,47 @@
+name: otlob_task
+description: A new Flutter application.
+
+
+publish_to:
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  hexcolor: ^2.0.3
+  flutter_rating_bar: ^4.0.0
+  http: ^0.13.3
+  conditional_builder: ^1.0.2
+  provider: ^5.0.0
+  flutter_bloc: ^7.0.0
+  bloc: ^7.0.0
+  dio: ^4.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  fonts:
+    - family: Tajawal
+      fonts:
+        - asset: assets/fonts/Tajawal-Bold.ttf
+        - asset: assets/fonts/Tajawal-ExtraBold.ttf
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/splash_screen/background.png
+    - assets/images/splash_screen/logo.png
+    - assets/images/login_screen/logo.png
+
+
+
+
