@@ -52,6 +52,7 @@ class ListOfResturants extends StatelessWidget {
                                     image: snapshot.data.ret[restIndex].restImg,
                                     type: snapshot.data.ret[restIndex].restType,
                                     open: snapshot.data.ret[restIndex].open,
+                                    rate: snapshot.data.ret[restIndex].rate.toDouble(),
                                     close: snapshot.data.ret[restIndex].close,
                                     delivery:
                                         snapshot.data.ret[restIndex].delivery ==
@@ -93,7 +94,7 @@ class ListOfResturants extends StatelessWidget {
                                   ),
                                   Container(
                                     child: RatingBar.builder(
-                                      initialRating: 2.5,
+                                      initialRating:snapshot.data.ret[restIndex].rate,
                                       maxRating: 5,
                                       minRating: 0,
                                       itemSize: size * 0.04,

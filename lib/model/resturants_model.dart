@@ -24,7 +24,7 @@ class ResturantsReturn {
   String restLocation;
   String restType;
   dynamic catId;
-  dynamic rate;
+  double rate;
   dynamic delivery;
   String open;
   String close;
@@ -37,7 +37,7 @@ class ResturantsReturn {
     restLocation = json['rest_location'];
     restType = json['rest_type'];
     catId = json['cat_id'];
-    rate = json['rate'];
+    rate = json['rate'].toDouble();
     delivery = json['delivery'];
     open = json['open'];
     close = json['close'];

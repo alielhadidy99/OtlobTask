@@ -17,11 +17,13 @@ class PlaceScreen extends StatelessWidget {
   final String close;
   final String image;
   final String delivery;
+  final double rate;
 
   PlaceScreen(
       {this.restId,
       this.name,
       this.image,
+        this.rate,
       this.delivery,
       this.type,
       this.location,
@@ -36,6 +38,7 @@ class PlaceScreen extends StatelessWidget {
     return Directionality(
       textDirection: TextDirection.rtl,
       child: Scaffold(
+
         body: CustomScrollView(
           slivers: [
             SliverAppBar(
@@ -82,7 +85,7 @@ class PlaceScreen extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                         ),
                         RatingBar.builder(
-                          initialRating: 5,
+                          initialRating:rate,
                           maxRating: 5,
                           minRating: 0,
                           itemSize: size * 0.045,
